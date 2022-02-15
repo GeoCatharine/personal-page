@@ -1,0 +1,38 @@
+.jumbotron {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 25px;
+  overflow-x: hidden;
+}
+
+.jumbo-photo-container {
+  display: grid;
+  align-content: center;
+  transform: scale(1);
+
+  img {
+    width: 200px;
+    border-radius: 100%;
+    border: 3px solid aliceblue;
+    margin: 0 auto;
+  }
+}
+
+.jumbo-text-container {
+  display: grid;
+  align-content: center;
+  padding-top: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 19px;
+  overflow-x: hidden;
+
+  span {
+    line-height: 40px;
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+    color: $decoration-color-darkmode;
+  }
+}

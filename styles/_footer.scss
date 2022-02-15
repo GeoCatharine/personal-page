@@ -1,0 +1,31 @@
+.footer-container {
+
+  overflow-x: hidden;
+
+  .footer-content {
+    padding: 50px 20px;
+
+    ul {
+      width: 100%;
+
+      li {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+
+      .code {
+        color: $decoration-color-darkmode;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+
+    span {
+      font-family: 'Inspiration', cursive;
+
+    }
+  }
+}

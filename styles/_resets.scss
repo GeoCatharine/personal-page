@@ -1,0 +1,50 @@
+
+// global resets
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+// ant design
+
+.ant-menu-item a{
+  color: $text-color-darkmode;
+}
+
+.ant-layout header {
+  padding: 0;
+}
+
+.ant-timeline-item-head-blue {
+  color: $text-color-darkmode;
+  border-color: $text-color-darkmode;
+  left: 0 !important;
+  margin-left: 106px  !important;
+}
+
+.ant-timeline.ant-timeline-label .ant-timeline-item-label {
+  width: 100px;
+  left: -15px;
+  top: -6.001px;
+}
+
+.ant-timeline-item-tail {
+  left: 110px !important;
+}
+
+.ant-timeline-item-content {
+  left: 44% !important;
+  width: 140px !important;
+  margin: 0 0 0 20px !important;
+}
+
+.ant-layout-footer {
+  padding: 0;
+  background: $text-color-darkmode;
+  color: $background-color-darkmode;
+}

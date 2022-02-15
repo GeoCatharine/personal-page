@@ -1,0 +1,162 @@
+
+.nav {
+  display: flex;
+  padding: 10px 20px;
+
+}
+
+.logo {
+  display: flex;
+  height: 80px;
+  flex-direction: row;
+
+
+  .logoText {
+    width: 120px;
+    margin: auto 0;
+
+    h1 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    :nth-child(2) {
+      padding-left: 10px;
+    }
+
+  }
+
+  h1 {
+    color: $text-color-darkmode;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-align: start;
+  }
+
+  .brackets {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+// burger menu icon + animation
+
+svg {
+  height: 80px;
+  position: absolute;
+  width: 80px;
+}
+
+#plate {
+  height: 80px;
+  width: 80px;
+  z-index: 8;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+}
+.burger {
+  filter: url(#gooeyness);
+}
+.x {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.line {
+  fill: none;
+  stroke: $text-color-darkmode;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.x .line {
+  stroke-width: 5.5px;
+}
+
+.plate1 .line2 {
+  stroke-dasharray: 40 200;
+  stroke-dashoffset: 0px;
+}
+.plate1 .line3 {
+  stroke-dasharray: 40 179;
+  stroke-dashoffset: 0px;
+}
+.active .line {
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+.active.plate1 .line1 {
+  transform: scale(0, 1);
+  transition: transform 500ms 100ms;
+}
+.active.plate1 .line2 {
+  stroke-dasharray: 5px 200;
+  stroke-dashoffset: -164px;
+}
+.active.plate1 .line3 {
+  stroke-dasharray: 5px 179;
+  stroke-dashoffset: -142px;
+}
+.active .x {
+  transform: scale(1);
+  transition: transform 400ms 350ms;
+}
+
+// burger menu 
+
+.burger-menu-move {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transition: 1.5s;
+}
+
+.full-page {
+  background-color: #0015298a;
+  backdrop-filter:  blur(6px) brightness(60%);
+  z-index: 5;
+}
+
+.burger-menu {
+  z-index: 7;
+
+  ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 70px 30px;
+
+    li {
+      width: 100%;
+      height: 100px;
+
+      a {
+        padding: 20px;
+        color: $text-color-darkmode;
+        line-height: 30px;
+        font-size: 30px;
+
+        :hover {
+          color: $decoration-color-darkmode;
+        }
+      }
+    }
+  }
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+
+.hide {
+  opacity: 0;
+  left: 950px;
+}

@@ -1,0 +1,39 @@
+// colors
+
+$background-color-darkmode: #001529;
+$background-color-light: #C1A3A3;
+
+$text-color-darkmode: aliceblue;
+$text-color-lightmode: #1A1A40;
+
+$decoration-color-darkmode: #5f778d;
+$decoration-color-lightmode: #694E4E;
+
+   // fonts
+
+   $font-weights: (
+    "S" : 100,
+    "M"  : 300,
+    "L"    : 500,
+);
+
+$line-heights: (
+    "XS" : 2.8rem,
+    "S" : 3.0rem,
+    "M"  : 3.6rem,
+    "L"   : 4.8rem,
+    "XL"  : 5.6rem,
+);
+
+$font-sizes: (
+    "small-text" : 1.6rem,
+    "medium-text": 1.8rem,
+    "large-text": 2.2rem,
+
+    "arrows" : 3.0rem,
+    
+    "small-title": 2.4rem,
+    "medium-title" : 2.6rem,
+    "large-title" : 3.6rem,
+    "xlarge-title" : 4.8rem,
+);

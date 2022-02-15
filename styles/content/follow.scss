@@ -1,0 +1,27 @@
+.contact-container {
+  padding: 50px 30px;
+
+  p {
+    color: $decoration-color-darkmode;
+  }
+}
+
+a {
+  width: 100%;
+  font-size: 20px;
+  color: $text-color-darkmode;
+
+  &:hover {
+    color: $decoration-color-darkmode;
+  }
+
+  p {
+    display: inline;
+    color: $text-color-darkmode;
+  }
+}
+
+img {
+  width: 20%;
+  margin-right: 40px;
+}

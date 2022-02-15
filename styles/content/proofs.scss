@@ -1,0 +1,33 @@
+.proofs-container {
+  padding: 50px 30px;
+  overflow: hidden;
+
+  p {
+    color: $decoration-color-darkmode;
+    font-size: 16px;
+  }
+}
+
+.proofs-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    width: 90%;
+    padding: 30px 10px;
+    margin: 20px 0;
+    text-align: center;
+    border: 3px solid $text-color-darkmode;
+    border-radius: 50px;
+    font-size: 20px;
+    color: $text-color-darkmode;
+    cursor: pointer;
+
+    &:hover {
+      color: $background-color-darkmode;
+      background-color: $text-color-darkmode;
+    }
+  }
+}
+

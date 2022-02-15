@@ -1,0 +1,29 @@
+// fonts
+
+h1 {
+  font-size: 30px;
+  margin: 0;
+  color: aliceblue;
+  font-family: 'Space Mono', monospace;
+  padding: 0;
+  text-align: start;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0;
+  color: aliceblue;
+  font-family: 'Space Mono', monospace;
+
+  :first-letter {
+    initial-letter: 4;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+.decor {
+  color: $decoration-color-darkmode;
+}
