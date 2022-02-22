@@ -7,6 +7,10 @@ h1 {
   font-family: 'Space Mono', monospace;
   padding: 0;
   text-align: start;
+
+  @include for-tablet-portrait {
+    font-size: 45px;
+  }
 }
 
 h2 {
@@ -15,13 +19,17 @@ h2 {
   color: aliceblue;
   font-family: 'Space Mono', monospace;
 
-  :first-letter {
-    initial-letter: 4;
+  @include for-tablet-portrait {
+    font-size: 35px;
   }
 }
 
 p {
   font-size: 16px;
+
+  @include for-tablet-portrait {
+    font-size: 25px;
+  }
 }
 
 .decor {

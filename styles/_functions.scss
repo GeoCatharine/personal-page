@@ -14,11 +14,13 @@
 
 // media Q mixins
 
-@mixin for-phone-only {
-    @media (min-width: 360px) { @content; }
+// starting at 360
+
+@mixin for-phone {
+    @media (min-width: 411px) { @content; }
   }
   @mixin for-tablet-portrait {
-    @media (min-width: 500px) { @content; }
+    @media (min-width: 760px) { @content; }
   }
   @mixin for-tablet-landscape {
     @media (min-width: 700px) { @content; }

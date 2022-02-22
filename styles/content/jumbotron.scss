@@ -5,6 +5,11 @@
   flex-direction: column;
   padding: 30px 25px;
   overflow-x: hidden;
+
+  @include for-tablet-portrait {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .jumbo-photo-container {

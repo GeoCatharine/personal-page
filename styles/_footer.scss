@@ -2,15 +2,31 @@
 
   overflow-x: hidden;
 
+  @include for-tablet-portrait {
+
+    background: no-repeat url(../public/splash.svg);
+    background-position: right -50px top 40px;
+    background-size: 500px;
+  }
+
   .footer-content {
     padding: 50px 20px;
 
+    @include for-tablet-portrait {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     ul {
-      width: 100%;
+      width: 80%;
 
       li {
         font-size: 20px;
         padding-left: 20px;
+
+        @include for-tablet-portrait {
+          font-size: 25px;
+        }
       }
 
       .code {
@@ -18,7 +34,9 @@
         padding-left: 0;
       }
     }
+
   }
+
 
   .footer-bottom {
     text-align: center;

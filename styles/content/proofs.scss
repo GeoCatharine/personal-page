@@ -2,9 +2,13 @@
   padding: 50px 30px;
   overflow: hidden;
 
+  @include for-tablet-portrait {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   p {
     color: $decoration-color-darkmode;
-    font-size: 16px;
   }
 }
 
@@ -23,6 +27,10 @@
     font-size: 20px;
     color: $text-color-darkmode;
     cursor: pointer;
+
+    @include for-tablet-portrait {
+      width: 60%;
+    }
 
     &:hover {
       color: $background-color-darkmode;

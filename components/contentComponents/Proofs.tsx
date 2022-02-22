@@ -2,7 +2,7 @@
 const Proofs = () => {
   return (
 
-    <div className='proofs-container'>
+    <div className='proofs-container' id="proof">
       <h1>Proofs.tsx</h1>
       <p>{'//'} click button to open certificates in new tab</p>
       <div className='proofs-buttons'>

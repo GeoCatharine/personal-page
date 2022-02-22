@@ -3,40 +3,42 @@ import React from 'react';
 
 const AboutCV = () => {
   return (
-    <section>
-        <div className='cv-header'>
+    <section className='cv'>
+        <div className='cv-header' id='about'>
           <h1>CurriculumVitae.tsx</h1>
         </div>
         <div className='cv-container'>
-          <div className='cv-animation-box'>
+          {/* <div className='cv-animation-box'>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
-          </div>
+          </div> */}
           <div className='cv-content'>
-            <div className='side-info'>
-              <h2># Basic Info:</h2>
-              <p><span>Name: </span> Viktória Nahorňaková</p>
-              <p><span>Date of Birth: </span> 24.02.1995</p>
-              <p><span>Current location: </span> Košice, Slovakia</p>
-            </div>
-            <div className='content'>
-              <div>
+            <div className='top-info'>
+              <div className='side-info'>
+                <h2># Basic Info:</h2>
+                <p><span>Name: </span> Viktória Nahorňaková</p>
+                <p><span>Date of Birth: </span> 24.02.1995</p>
+                <p><span>Current location: </span> Košice, Slovakia</p>
+              </div>
+              <div className='backstory'>
                 <h2># Backstory: </h2>
                 <p>My first encounter with a code was, when i managed a personal blog at age 13. Instead of filling it with content, i had much more fun figuring out layouts, templates and designing whole page with some basic hmtl & css. Even though i took differnt route in life, ive come full circle right back, behind screen staring at code, ready to learn and make every page i touch, better. </p>
               </div>
+            </div>
+            <div className='content'>
               <div>
                 <h2># Timeline:</h2>
                 <Timeline mode={'left'} style={{ width: '100%',marginTop: '50px', color: 'aliceblue' }}>
                   <Timeline.Item label="2011-2015">Stredná súkromná umelecká škola filmová </Timeline.Item>
-                  <Timeline.Item label="2014-2015">Caffee Deldia {'{ barista };' } </Timeline.Item>
-                  <Timeline.Item label="2015-2015">Keltská Krčma { '{ barista && barman && waitress };' } </Timeline.Item>
+                  <Timeline.Item label="2014-2015">Caffee Deldia {'{'} <br />{'barista };' } </Timeline.Item>
+                  <Timeline.Item label="2015-2015">Keltská Krčma {'{'} <br /> {'barista && barman && waitress };' } </Timeline.Item>
                   <Timeline.Item label="2016-2019">RegioJet {'{'} <br /> {'steward && teamlead };'} </Timeline.Item>
                   <Timeline.Item label="2021-2021">At&t {'{'} <br /> { 'Technical Support };'} </Timeline.Item>
                 </Timeline>
               </div>
-              <div>
+              <div className='skills'>
                 <h2># Skills:</h2>
                 <div className='skills-container'>
                   <div className='card'>

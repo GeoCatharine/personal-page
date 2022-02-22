@@ -1,27 +1,55 @@
 .contact-container {
   padding: 50px 30px;
 
+  @include for-tablet-portrait {
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+      margin-left: 20px;
+    }
+  }
+
   p {
     color: $decoration-color-darkmode;
+  }
+
+  a {
+    width: 100%;
+    font-size: 20px;
+    color: $text-color-darkmode;
+    display: block;
+    padding-bottom: 10px;
+  
+    &:hover {
+      color: $decoration-color-darkmode;
+    }
+  
+    @include for-tablet-portrait {
+      text-align: center;
+      padding-bottom: 50px;
+      font-size: 30px;
+    }
   }
 }
 
-a {
-  width: 100%;
-  font-size: 20px;
-  color: $text-color-darkmode;
+.other-links {
 
-  &:hover {
-    color: $decoration-color-darkmode;
+  @include for-tablet-portrait {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
   }
 
-  p {
-    display: inline;
-    color: $text-color-darkmode;
-  }
 }
 
 img {
   width: 20%;
   margin-right: 40px;
+
+  @include for-tablet-portrait {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
 }
