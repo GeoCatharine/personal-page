@@ -22,6 +22,12 @@
     margin: 100px auto;
     margin-bottom: 210px;
   }
+
+  @include for-desktop {
+    width: 70%;
+    padding: 0;
+    margin: 200px auto;
+  }
 }
 
 .jumbo-photo-container {
@@ -64,6 +70,10 @@
     text-align: start;
     width: 60%;
     padding-top: 20px;
+  }
+
+  @include for-desktop {
+    width: 50%;
   }
 
   span {

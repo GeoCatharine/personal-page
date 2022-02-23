@@ -17,8 +17,21 @@
       margin: 0 auto;
     }
 
+    .made-with {
+
+      @include for-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
     ul {
       width: 80%;
+
+      @include for-desktop {
+        width: 30%;
+      }
 
       li {
         font-size: 20px;
@@ -30,6 +43,10 @@
 
         @include for-tablet-landscape {
           font-size: 20px;
+        }
+
+        @include for-tablet-landscape-bg {
+          font-size: 25px;
         }
       }
 
@@ -44,10 +61,10 @@
 
   .footer-bottom {
     text-align: center;
+    font-size: 16px;
 
     span {
       font-family: 'Inspiration', cursive;
-
     }
   }
 }

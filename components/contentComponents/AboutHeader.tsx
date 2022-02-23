@@ -4,7 +4,7 @@ const AboutHeader = () => {
   return (
     <section className='jumbotron'>
       <div className='jumbo-photo-container'>
-        <img src='photo.jpeg' alt='photo'/>
+        <img data-aos="fade-right" data-aos-delay='500' data-aos-duration='1500' src='photo.jpeg' alt='photo'/>
       </div>
       <div data-aos="fade-left" data-aos-delay='500' data-aos-duration='1500' className='jumbo-text-container'>
         <p>

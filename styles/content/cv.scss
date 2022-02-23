@@ -5,6 +5,10 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  @include for-desktop {
+    width: 70%;
+  }
 }
 
 
@@ -152,6 +156,10 @@
 }
 
 .skillbox-else {
+
+  h1 {
+    text-align: center;
+  }
 
   @include for-tablet-landscape-bg {
     width: 90%;
