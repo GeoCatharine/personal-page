@@ -12,9 +12,8 @@ const AboutHeader = () => {
           Hi! My name is Victoria, Im self-thought junior front-end developer from Slovakia and this page, 
           although still in process of making, 
           is little showcase of my code and what i can do.
-          You can find my CV, my certificates and of course contact information. 
           Even though my coding journey is still at beginning, I cant wait to learn more, 
-          google harder and show off my skills throu this page.
+          google harder and show off my skills here.
           <span className='jumbo-text-span'><br />{'</p>'}</span>
         </p>
       </div>

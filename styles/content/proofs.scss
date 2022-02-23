@@ -2,7 +2,7 @@
   padding: 50px 30px;
   overflow: hidden;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     width: 80%;
     margin: 0 auto;
   }
@@ -28,8 +28,10 @@
     color: $text-color-darkmode;
     cursor: pointer;
 
-    @include for-tablet-portrait {
-      width: 60%;
+    @include for-tablet-sm {
+      width: 70%;
+      font-size: 30px;
+      margin: 25px 0;
     }
 
     &:hover {

@@ -8,8 +8,16 @@ h1 {
   padding: 0;
   text-align: start;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     font-size: 45px;
+  }
+
+  @include for-tablet-bg {
+    font-size: 55px;
+  }
+
+  @include for-tablet-landscape {
+    font-size: 35px;
   }
 }
 
@@ -19,16 +27,32 @@ h2 {
   color: aliceblue;
   font-family: 'Space Mono', monospace;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     font-size: 35px;
+  }
+
+  @include for-tablet-bg {
+    font-size: 45px;
+  }
+
+  @include for-tablet-landscape {
+    font-size: 25px;
   }
 }
 
 p {
   font-size: 16px;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     font-size: 25px;
+  }
+
+  @include for-tablet-bg {
+    font-size: 30px;
+  }
+
+  @include for-tablet-landscape {
+    font-size: 20px;
   }
 }
 

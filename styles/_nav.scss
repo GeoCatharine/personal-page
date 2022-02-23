@@ -1,6 +1,12 @@
 .ant-layout-header {
-  padding: 0 40px !important;
-  height: 200px !important;
+  @include for-tablet-sm {
+    padding: 0 40px !important;
+    height: 200px !important;
+  }
+
+  @include for-tablet-landscape {
+    height: 150px !important;
+  }
 }
 
 
@@ -15,7 +21,7 @@
   height: 80px;
   flex-direction: row;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     margin-top: 30px;
   }
 
@@ -23,7 +29,8 @@
   .logoText {
     width: 120px;
     margin: auto 0;
-    @include for-tablet-portrait {
+    
+    @include for-tablet-sm {
       width: 200px;
     }
 
@@ -31,7 +38,7 @@
       font-size: 20px;
       line-height: 25px;
 
-      @include for-tablet-portrait {
+      @include for-tablet-sm {
         font-size: 35px;
         line-height: 35px;
       }
@@ -54,7 +61,7 @@
     font-size: 70px;
     line-height: 70px;
 
-    @include for-tablet-portrait {
+    @include for-tablet-sm {
       font-size: 100px;
     }
   }
@@ -67,7 +74,7 @@ svg {
   position: absolute;
   width: 80px;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     height: 120px;
     width: 120px;
   }
@@ -82,7 +89,7 @@ svg {
   top: 12px;
   cursor: pointer;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     right: 80px;
     top: 22px;
   }
@@ -165,8 +172,12 @@ svg {
       height: 100px;
       padding: 20px;
 
-      @include for-tablet-portrait {
+      @include for-tablet-sm {
         margin: 40px 0;
+      }
+
+      @include for-tablet-bg {
+        margin: 60px 60px;
       }
 
       a {
@@ -178,8 +189,12 @@ svg {
           color: $decoration-color-darkmode;
         }
 
-        @include for-tablet-portrait {
+        @include for-tablet-sm {
           font-size: 48px;
+        }
+
+        @include for-tablet-bg {
+          font-size: 58px;
         }
       }
     }

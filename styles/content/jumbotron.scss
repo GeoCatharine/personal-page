@@ -6,22 +6,41 @@
   padding: 30px 25px;
   overflow-x: hidden;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     width: 80%;
     margin: 0 auto;
+  }
+
+  @include for-tablet-landscape {
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
   }
 }
 
 .jumbo-photo-container {
   display: grid;
   align-content: center;
-  transform: scale(1);
+
+  @include for-tablet-landscape {
+    width: 30%;
+  }
 
   img {
     width: 200px;
     border-radius: 100%;
     border: 3px solid aliceblue;
     margin: 0 auto;
+
+    @include for-tablet-bg {
+      width: 300px;
+    }
+
+    @include for-tablet-landscape {
+      max-width: 250px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -30,14 +49,28 @@
   align-content: center;
   padding-top: 30px;
   text-align: center;
-  line-height: 35px;
-  font-size: 19px;
   overflow-x: hidden;
+
+  @include for-tablet-landscape {
+    text-align: start;
+    width: 60%;
+    padding-top: 20px;
+  }
 
   span {
     line-height: 40px;
     font-size: 30px;
     font-family: 'Space Mono', monospace;
     color: $decoration-color-darkmode;
+
+    @include for-tablet-bg {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    @include for-tablet-landscape {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }

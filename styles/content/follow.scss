@@ -1,7 +1,7 @@
 .contact-container {
   padding: 50px 30px;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     width: 80%;
     margin: 0 auto;
 
@@ -25,7 +25,7 @@
       color: $decoration-color-darkmode;
     }
   
-    @include for-tablet-portrait {
+    @include for-tablet-sm {
       text-align: center;
       padding-bottom: 50px;
       font-size: 30px;
@@ -35,7 +35,7 @@
 
 .other-links {
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
@@ -47,7 +47,7 @@ img {
   width: 20%;
   margin-right: 40px;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     width: 100px;
     display: block;
     margin: 0 auto;

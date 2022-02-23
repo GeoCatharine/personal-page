@@ -22,11 +22,25 @@ ul {
 
 .ant-timeline {
 
-  @include for-tablet-portrait {
-    margin-left: 30px;
+  @include for-tablet-sm {
+    margin-left: 30px !important;
 
     li > div {
-      font-size: 20px;
+      font-size: 20px !important;
+    }
+  }
+
+  @include for-tablet-bg {
+    margin-left: 0 !important;
+
+    li > div {
+      font-size: 30px !important;
+    }
+  }
+
+  @include for-tablet-landscape {
+    li > div {
+      font-size: 20px !important;
     }
   }
 }
@@ -41,8 +55,14 @@ ul {
     margin-left: 120px !important;
   }
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     margin-left: 154px !important;
+  }
+
+  @include for-tablet-bg {
+    margin-left: 283px !important;
+    width: 15px !important;
+    height: 15px !important;
   }
 }
 
@@ -51,8 +71,13 @@ ul {
   left: -15px;
   top: -6.001px;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     width: 107px;
+  }
+
+  @include for-tablet-bg {
+    width: 200px;
+    left: 0;
   }
 }
 
@@ -63,16 +88,12 @@ ul {
     left: 124px !important;
   }
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     left: 158px !important;
   }
-}
 
-.ant-timeline-item {
-  font-size: 16px;
-
-  @include for-tablet-portrait {
-    font-size: 20px;
+  @include for-tablet-bg {
+    left: 290px !important;
   }
 }
 
@@ -81,8 +102,13 @@ ul {
   width: 140px !important;
   margin: 0 0 0 20px !important;
 
-  @include for-tablet-portrait {
+  @include for-tablet-sm {
     width: 200px !important;
+  }
+
+  @include for-tablet-bg {
+    width: 250px !important;
+    margin: 0 0 0 90px !important;
   }
 }
 
@@ -90,4 +116,8 @@ ul {
   padding: 0;
   background: $text-color-darkmode;
   color: $background-color-darkmode;
+}
+
+.ant-layout {
+  background: $background-color-darkmode !important;
 }
