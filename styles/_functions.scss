@@ -28,8 +28,8 @@
   @mixin for-tablet-landscape {
       @media (min-height: 600px) { @content; }
   }
-  @mixin for-desktop {
-    @media (min-width: 1100px) { @content; }
+  @mixin for-tablet-landscape-bg {
+    @media (min-height: 800px) { @content; }
   }
   @mixin for-big-desktop {
     @media (min-width: 1400px) { @content; }

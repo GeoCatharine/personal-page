@@ -55,15 +55,19 @@ const AboutCV = () => {
                   </div>
                   <div className='card'>
                     <img src='sass-darkmode.png' />
+                    <div className='skill-textbox'>
                     <p className='decor'>{'//'} and other CSS hacks</p>
                     <p>I stared to look into Sass, same time as i started my road with Vue. Even through i enjoyed the scoped scss for little tweaks, the ability of functions, mixins and vars aboslutely dominated the way i write my CSS now. I also tried out Bootstrap and Tailwind couple of times, in order to find suitable framework, although Im still on a hunt.</p>
+                    </div>
                   </div>
                   <div className='card'>
                     <img src='react-darkmode.png' />
+                   <div className='skill-textbox'>
                     <p className='decor'>{'//'} with typescript</p>
                     <p>React is newest addition, i can already see potential for larger scale projects, however we are still getting to know each other. In order to be more confortable with writing in React, i would have to write much more projects in future and thats the main reason, behind the decision, to write my page in library im not 100% familiar with. </p>
+                   </div>
                   </div>
-                  <div className='card'>
+                  <div className='skillbox-else'>
                     <h1>..etc..</h1>
                     <p className='decor'>Pros:</p>
                     <p>From previous experieces i can definetly say im team player, im good with time managment and my biggest positive characteristic is, i know that i dont know. I dont overestimate my ablities, there is no shame of not knowing and asking. I would much rather ask hundred times and do my job right than eyeball it and fail. Also doublechecking is nice. </p>

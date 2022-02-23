@@ -17,6 +17,11 @@
     margin-bottom: 100px;
     justify-content: space-evenly;
   }
+
+  @include for-tablet-landscape-bg {
+    margin: 100px auto;
+    margin-bottom: 210px;
+  }
 }
 
 .jumbo-photo-container {
@@ -40,6 +45,10 @@
     @include for-tablet-landscape {
       max-width: 250px;
       margin: 0 auto;
+    }
+
+    @include for-tablet-landscape-bg {
+      max-width: 300px;
     }
   }
 }
@@ -71,6 +80,11 @@
     @include for-tablet-landscape {
       font-size: 20px;
       line-height: 20px;
+    }
+
+    @include for-tablet-landscape-bg {
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 }

@@ -64,6 +64,10 @@ ul {
     width: 15px !important;
     height: 15px !important;
   }
+
+  @include for-tablet-landscape-bg {
+    margin-left: 325px !important;
+  }
 }
 
 .ant-timeline.ant-timeline-label .ant-timeline-item-label {
@@ -94,6 +98,10 @@ ul {
 
   @include for-tablet-bg {
     left: 290px !important;
+  }
+
+  @include for-tablet-landscape-bg {
+    left: 332px !important;
   }
 }
 
