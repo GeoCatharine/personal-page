@@ -2,30 +2,26 @@ import '../styles/globals.scss'
 import { Layout } from 'antd'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Nav from '../components/Nav';
-import MainContent from '../components/MainContent';
-import FooterContent from '../components/Footer';
-import { useEffect } from 'react';
-import Custom404 from './404';
+import { FunctionComponent, useEffect } from 'react';
+import Head from 'next/head';
+import type { AppProps } from 'next/app';
 
-const { Header, Footer, Content } = Layout;
-
-function MyApp() {
+const MyApp: FunctionComponent<AppProps> = ({Component, pageProps}) => {
   useEffect(() => {
     AOS.init();
   });
 
   return (
     <Layout>
-      <Header style={{ height: '100px'}}>
-        <Nav />
-      </Header>
-      <Content>
-        <MainContent />
-      </Content>
-      <Footer>
-        <FooterContent />
-      </Footer>
+      <Head>
+        <title>Victoria Valentine</title>
+        <meta name="description" content="Personal/portofilo page" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Inspiration&family=Space+Mono&display=swap" rel="stylesheet" />
+      </Head>
+      <Component {...pageProps} />
     </Layout>
   )
 }
