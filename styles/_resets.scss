@@ -108,7 +108,6 @@ ul {
 .ant-timeline-item-content {
   left: 44% !important;
   width: 140px !important;
-  margin: 0 0 0 20px !important;
 
   @include for-tablet-sm {
     width: 200px !important;
@@ -116,7 +115,6 @@ ul {
 
   @include for-tablet-bg {
     width: 250px !important;
-    margin: 0 0 0 90px !important;
   }
 }
 

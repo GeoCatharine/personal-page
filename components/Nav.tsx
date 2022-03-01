@@ -20,6 +20,7 @@ const Nav = () => {
         />
         <Menu 
           burgerActive = {burgerActive}
+          setBurgerActive = {setBurgerActive}
         />
     </div>
   )

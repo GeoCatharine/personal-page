@@ -1,16 +1,18 @@
-import Link from 'next/link';
-import React, { Fragment, FunctionComponent, MouseEvent } from 'react';
+import React, { Fragment, FunctionComponent, useState } from 'react';
 import { BurgerProps } from '../Nav';
 
-const BurgerMenu: FunctionComponent<Partial<BurgerProps>> = ({ burgerActive }) => {
+const BurgerMenu: FunctionComponent<BurgerProps> = ({ setBurgerActive, burgerActive }) => {
   const about = '\$\{ ...about \}'
   const proof = '\$\{ ...proofs \}'
   const contact = '\$\{ ...follow \}'
 
+  const [isActive, setActive] = useState(false)
 
-  const handleScroll2 = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
-  }
+  const toggleClass = () => {
+    setActive(!isActive);
+    setBurgerActive(!burgerActive);
+  };
+  
 
   return (
     <Fragment>
@@ -18,13 +20,13 @@ const BurgerMenu: FunctionComponent<Partial<BurgerProps>> = ({ burgerActive }) =
       <div className={`burger-menu burger-menu-move ${burgerActive ? 'show' : 'hide'}`}>
         <ul>
           <li>
-              <a href='#about' onClick={handleScroll2}>{about}</a>
+              <a href='#about' onClick={toggleClass} >{about}</a>
           </li>
           <li>
-              <a href='#proof'>{proof}</a>
+              <a href='#proof' onClick={toggleClass} >{proof}</a>
           </li>
           <li>
-              <a href='#follow'>{contact}</a>
+              <a href='#follow' onClick={toggleClass} >{contact}</a>
           </li>
         </ul>
       </div>
@@ -33,3 +35,4 @@ const BurgerMenu: FunctionComponent<Partial<BurgerProps>> = ({ burgerActive }) =
 };
 
 export default BurgerMenu;
+

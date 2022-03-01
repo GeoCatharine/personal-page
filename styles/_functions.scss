@@ -35,14 +35,6 @@
     @media (min-width: 1500px) { @content; }
   }
 
-  @mixin for-HD {
-    @media (min-width: 1700px) { @content; }
-  }
-
-  @mixin for-UltraHD {
-    @media (min-width: 2500px) { @content; }
-  }
-
-  @mixin for-ultrawide {
-    @media (min-width: 3000px) {@content; }
+  @mixin for-desktop-bg {
+    @media (min-width: 1900px) { @content; }
   }

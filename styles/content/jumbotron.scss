@@ -28,6 +28,10 @@
     padding: 0;
     margin: 200px auto;
   }
+
+  @include for-desktop-bg {
+    max-width: 50%;
+  }
 }
 
 .jumbo-photo-container {

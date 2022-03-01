@@ -23,6 +23,10 @@ h1 {
   @include for-tablet-landscape-bg {
     font-size: 45px;
   }
+
+  @include for-desktop {
+    font-size: 45px;
+  }
 }
 
 h2 {
@@ -46,6 +50,10 @@ h2 {
   @include for-tablet-landscape-bg {
     font-size: 35px;
   }
+
+  @include for-desktop {
+    font-size: 35px;
+  }
 }
 
 p {
@@ -60,6 +68,10 @@ p {
   }
 
   @include for-tablet-landscape {
+    font-size: 20px;
+  }
+
+  @include for-desktop {
     font-size: 20px;
   }
 }

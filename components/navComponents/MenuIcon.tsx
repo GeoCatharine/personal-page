@@ -7,6 +7,12 @@ const BurgerMenuIcon: FunctionComponent<BurgerProps> = ({setBurgerActive, burger
   const toggleClass = () => {
     setActive(!isActive);
     setBurgerActive(!burgerActive);
+
+    if (isActive) {
+      document.body.style.position = "fixed"
+    } else {
+      document.body.style.position = "relative"
+    }
   };
 
   return (
