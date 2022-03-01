@@ -42,26 +42,26 @@ const AboutCV = () => {
                 <h2># Skills:</h2>
                 <div className='skills-container'>
                   <div className='card'>
-                    <img src='html-css-darkmode.png'/>
+                    <img src='html-css-darkmode.png' alt='html css icon'/>
                     <p>It didnt take me long to get used to html & css, since i already had some basic understanding how websites work. I absolved 70 hour long udemy couse, just to get a hang of what i can do and what are latest good practices. After that, i knew the right way for me will be front-end web developing.</p>
                   </div>
                   <div className='card'>
-                    <img src='javascript-darkmode.png' />
+                    <img src='javascript-darkmode.png' alt='javascript icon'/>
                     <p>This was a huge mountain to climb, and for sure, the one i will be climbing forever. Learning through exercises, courses and just writing as much code as i can. I encounter jQuery on my way, but we decided, after a while, to not stay in touch. </p>
                   </div>
                   <div className='card'>
-                    <img src='vue-darkmode.png' />
+                    <img src='vue-darkmode.png' alt='vuejs icon'/>
                     <p>Vue was match made in heaven. That might be because of my obssesion of organizing the code. Just a basic idea of component with html, functionality and css on single file, was what got me. The lifecycle and props is just cherry on top. </p>
                   </div>
                   <div className='card'>
-                    <img src='sass-darkmode.png' />
+                    <img src='sass-darkmode.png' alt='sass icon'/>
                     <div className='skill-textbox'>
                     <p className='decor'>{'//'} and other CSS hacks</p>
                     <p>I stared to look into Sass, same time as i started my road with Vue. Even through i enjoyed the scoped scss for little tweaks, the ability of functions, mixins and vars aboslutely dominated the way i write my CSS now. I also tried out Bootstrap and Tailwind couple of times, in order to find suitable framework, although Im still on a hunt.</p>
                     </div>
                   </div>
                   <div className='card'>
-                    <img src='react-darkmode.png' />
+                    <img src='react-darkmode.png' alt='react icon'/>
                    <div className='skill-textbox'>
                     <p className='decor'>{'//'} with typescript</p>
                     <p>React is newest addition, i can already see potential for larger scale projects, however we are still getting to know each other. In order to be more confortable with writing in React, i would have to write much more projects in future and thats the main reason, behind the decision, to write my page in library im not 100% familiar with. </p>

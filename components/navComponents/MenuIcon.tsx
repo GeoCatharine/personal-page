@@ -1,4 +1,4 @@
-import React, { Fragment, FunctionComponent, useState } from 'react';
+import React, { Fragment, FunctionComponent, useEffect, useState } from 'react';
 import { BurgerProps } from '../Nav';
 
 const BurgerMenuIcon: FunctionComponent<BurgerProps> = ({setBurgerActive, burgerActive}) => {
@@ -7,13 +7,16 @@ const BurgerMenuIcon: FunctionComponent<BurgerProps> = ({setBurgerActive, burger
   const toggleClass = () => {
     setActive(!isActive);
     setBurgerActive(!burgerActive);
+    console.log(isActive);
+  };
 
+  useEffect(() => {
     if (isActive) {
       document.body.style.position = "fixed"
-    } else {
+    } else if (!isActive) {
       document.body.style.position = "relative"
     }
-  };
+  }, [isActive])
 
   return (
     <Fragment>

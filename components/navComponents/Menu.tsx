@@ -23,7 +23,7 @@ const BurgerMenu: FunctionComponent<BurgerProps> = ({ setBurgerActive, burgerAct
               <a href='#about' onClick={toggleClass} >{about}</a>
           </li>
           <li>
-              <a href='#proof' onClick={toggleClass} >{proof}</a>
+              <a href='#proofs' onClick={toggleClass} >{proof}</a>
           </li>
           <li>
               <a href='#follow' onClick={toggleClass} >{contact}</a>

@@ -15,11 +15,11 @@ const Follow = () => {
       <p>{'// contact info'}</p>
       <div className="contact-links">
         <a onClick={copyEmail}>
-          <img data-aos='flip-up' data-aos-delay="300" src='mail-darkmode.png' /> 
+          <img data-aos='flip-up' data-aos-delay="300" src='mail-darkmode.png' alt="email icon" /> 
           {changeButton}
         </a>
-        <a href="https://github.com/GeoCatharine" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="500" src='git-lightmode.png' /> git me</a>
-        <a href="" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="700" src='linkedin-darkmode.png' /> link me</a>
+        <a href="https://github.com/GeoCatharine" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="500" src='git-lightmode.png' alt="github icon"/> git me</a>
+        <a href="" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="700" src='linkedin-darkmode.png' alt="linkedin icon"/> link me</a>
       </div>
     </div>
   );
