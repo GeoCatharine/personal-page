@@ -8,13 +8,15 @@ const AboutHeader = () => {
       </div>
       <div data-aos="fade-left" data-aos-delay='500' data-aos-duration='1500' className='jumbo-text-container'>
         <p>
-          <span className='jumbo-text-span'>{'<p>'} <br /></span>
-          Hi! My name is Victoria, Im self-thought junior front-end developer from Slovakia and this page, 
+          <div className='text-decor'>{'<p>'}</div>
+          Hi! My name is Victoria, 
+          <br />
+          Im self-thought junior front-end developer from Slovakia and this page, 
           although still in process of making, 
           is little showcase of my code and what i can do.
           Even though my coding journey is still at beginning, I cant wait to learn more, 
           google harder and show off my skills here.
-          <span className='jumbo-text-span'><br />{'</p>'}</span>
+          <div className='text-decor'>{'</p>'}</div>
         </p>
       </div>
     </section>

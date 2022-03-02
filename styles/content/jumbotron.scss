@@ -15,7 +15,7 @@
     flex-direction: row;
     width: 90%;
     margin-bottom: 100px;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   @include for-tablet-landscape-bg {
@@ -78,13 +78,14 @@
   }
 
   @include for-desktop {
-    width: 50%;
+    width: 60%;
   }
 
-  span {
+  .text-decor {
     line-height: 40px;
     font-size: 30px;
     color: $decoration-color-darkmode;
+    padding: 10px 0;
 
     @include for-tablet-bg {
       font-size: 50px;
@@ -97,6 +98,11 @@
     }
 
     @include for-tablet-landscape-bg {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    @include for-desktop {
       font-size: 30px;
       line-height: 40px;
     }

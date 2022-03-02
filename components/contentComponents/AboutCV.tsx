@@ -8,12 +8,6 @@ const AboutCV = () => {
           <h1>CurriculumVitae.tsx</h1>
         </div>
         <div className='cv-container'>
-          {/* <div className='cv-animation-box'>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div> */}
           <div className='cv-content'>
             <div className='top-info'>
               <div className='side-info'>

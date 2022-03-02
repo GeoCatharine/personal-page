@@ -12,7 +12,7 @@
   }
 
   @include for-desktop {
-    width: 70%;
+    width: 50%;
   }
 }
 
@@ -22,7 +22,7 @@
   align-items: center;
 
   @include for-desktop-bg {
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto;
   }
 

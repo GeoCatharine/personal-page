@@ -1,5 +1,4 @@
 import About from './contentComponents/About';
-import Follow from './contentComponents/Follow';
 import Proofs from './contentComponents/Proofs';
 
 const MainContent = () => {
@@ -7,7 +6,6 @@ const MainContent = () => {
     <main>
       <About />
       <Proofs />
-      <Follow />
     </main>
   )
 };

@@ -1,31 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Footer = () => {
+  const [changeButton, setChangeButton] = useState('email me')
+
+  function copyEmail() {
+    navigator.clipboard.writeText('v.nahornakova@gmail.com');
+    setChangeButton('copied to clipboard!')
+  }
+
   return (
-    <div className='footer-container'>
-      <div data-aos="fade-left" data-aos-delay='500' data-aos-duration='1500' className='footer-content'>
-        <div className='made-with'>
-          <ul>
-            <li className='code'>{'( Made with: ) => {'}</li>
-            <li>React.js || Next.js;</li>
-            <li>AntDesign;</li>
-            <li>Sass;</li>
-            <li>AOS Library;</li>
-            <li className='code'>{'};'}</li>
-          </ul>
-          <ul>
-            <li className='code'>{'( It took: ) => {'}</li>
-            <li>3 weeks of coding;</li>
-            <li>5 days of googling;</li>
-            <li>14 lunch breaks;</li>
-            <li>2 lazy days;</li>
-            <li>1 mental breakdown(antd);</li>
-            <li className='code'>{'};'}</li>
-          </ul>
-        </div>
-        <div className='links'>
-          
-        </div>
+    <div className='footer-container' id="follow">
+      <div className='footer-top'>
+        <h1>FollowMe.tsx</h1>
+        <p>{'// contact info'}</p>
+      </div>
+      <div className="contact-links">
+        <a onClick={copyEmail}>
+          <img data-aos='flip-up' data-aos-delay="300" src='mail-lightmode.png' alt="email icon" /> 
+          {changeButton}
+        </a>
+        <a href="https://github.com/GeoCatharine" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="500" src='github-lightmode.svg' alt="github icon"/> git me</a>
+        <a href="" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="700" src='linkedin-lightmode.svg' alt="linkedin icon"/> link me</a>
       </div>
       <div className='footer-bottom'>
         <p>Made by <span>Victoria Valentine</span> &copy; 2022</p>
