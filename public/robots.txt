@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://victoriavalentine.netlify.app/api/site-map
