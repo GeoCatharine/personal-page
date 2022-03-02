@@ -1,8 +1,9 @@
-import { Content, Footer, Header } from 'antd/lib/layout/layout'
-import type { NextPage } from 'next'
-import MainContent from '../components/MainContent'
+import { Content, Footer, Header } from 'antd/lib/layout/layout';
+import type { NextPage } from 'next';
+import MainContent from '../components/MainContent';
 import FooterContent from '../components/Footer';
-import Nav from '../components/Nav'
+import Nav from '../components/Nav';
+
 
 const Home: NextPage = () => {
   return (

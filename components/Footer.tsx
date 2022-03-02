@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Footer = () => {
@@ -19,8 +20,12 @@ const Footer = () => {
           <img data-aos='flip-up' data-aos-delay="300" src='mail-lightmode.png' alt="email icon" /> 
           {changeButton}
         </a>
-        <a href="https://github.com/GeoCatharine" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="500" src='github-lightmode.svg' alt="github icon"/> git me</a>
-        <a href="" target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="700" src='linkedin-lightmode.svg' alt="linkedin icon"/> link me</a>
+        <Link href="https://github.com/GeoCatharine">
+          <a target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="500" src='github-lightmode.svg' alt="github icon"/> git me</a>
+        </Link>
+        <Link href={'https://linkedin.com/in/viktoria-valentine'}>
+          <a target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="700" src='linkedin-lightmode.svg' alt="linkedin icon"/> link me</a>
+        </Link>
       </div>
       <div className='footer-bottom'>
         <p>Made by <span>Victoria Valentine</span> &copy; 2022</p>

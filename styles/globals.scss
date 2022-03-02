@@ -27,5 +27,26 @@ body {
   overflow: hidden;
 }
 
+// 404
+
+.err-container {
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  p {
+    padding: 100px 0;
+    color: $decoration-color-darkmode;
+  }
+}
+
 
 
