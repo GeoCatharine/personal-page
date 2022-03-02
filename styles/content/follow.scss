@@ -1,13 +1,10 @@
 .contact-container {
   padding: 50px 30px;
+  margin-bottom: 100px;
 
   @include for-tablet-sm {
     width: 80%;
     margin: 0 auto;
-
-    p {
-      margin-left: 20px;
-    }
   }
 
   @include for-desktop {
@@ -15,6 +12,8 @@
   }
 
   .contact-links {
+    padding: 30px 0;
+
     @include for-tablet-sm {
       display: flex;
       flex-direction: row;
@@ -31,7 +30,7 @@
     font-size: 20px;
     color: $text-color-darkmode;
     display: block;
-    padding-bottom: 10px;
+    padding: 20px 0;
   
     &:hover {
       color: $decoration-color-darkmode;

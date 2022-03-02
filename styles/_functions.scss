@@ -15,8 +15,10 @@
 // media Q mixins
 
 // starting at 360
-
-@mixin for-phone {
+  @mixin for-phone-xs {
+    @media (max-width: 360px) { @content; }
+  }
+  @mixin for-phone {
     @media (min-width: 411px) { @content; }
   }
   @mixin for-tablet-sm {

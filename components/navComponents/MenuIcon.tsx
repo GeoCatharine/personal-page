@@ -1,23 +1,7 @@
-import React, { Fragment, FunctionComponent, useEffect, useState } from 'react';
+import React, { Fragment, FunctionComponent } from 'react';
 import { BurgerProps } from '../Nav';
 
-const BurgerMenuIcon: FunctionComponent<BurgerProps> = ({setBurgerActive, burgerActive}) => {
-  const [isActive, setActive] = useState(false)
-
-  const toggleClass = () => {
-    setActive(!isActive);
-    setBurgerActive(!burgerActive);
-    console.log(isActive);
-  };
-
-  useEffect(() => {
-    if (isActive) {
-      document.body.style.position = "fixed"
-    } else if (!isActive) {
-      document.body.style.position = "relative"
-    }
-  }, [isActive])
-
+const BurgerMenuIcon: FunctionComponent<BurgerProps> = ({ isMenuActive, setMenuActive}) => {
   return (
     <Fragment>
       <svg>
@@ -29,7 +13,7 @@ const BurgerMenuIcon: FunctionComponent<BurgerProps> = ({setBurgerActive, burger
           </filter>
         </defs>
       </svg>
-      <div id='plate' className={`plate1 ${isActive ? 'active' : ''}`} onClick={toggleClass}>
+      <div id='plate' className={`plate1 ${isMenuActive ? 'active' : ''}`} onClick={() => setMenuActive()}>
         <svg className="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
           <path className="line line1" d="M 30,65 H 70"/>
           <path className="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"/>

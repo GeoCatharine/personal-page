@@ -31,6 +31,7 @@
 
   @include for-desktop-bg {
     max-width: 50%;
+    margin: 100px auto;
   }
 }
 
@@ -83,7 +84,6 @@
   span {
     line-height: 40px;
     font-size: 30px;
-    font-family: 'Space Mono', monospace;
     color: $decoration-color-darkmode;
 
     @include for-tablet-bg {
@@ -93,7 +93,7 @@
 
     @include for-tablet-landscape {
       font-size: 20px;
-      line-height: 20px;
+      line-height: 30px;
     }
 
     @include for-tablet-landscape-bg {

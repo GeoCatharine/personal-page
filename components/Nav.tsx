@@ -2,25 +2,26 @@ import { useState } from 'react';
 import Menu from './navComponents/Menu';
 import MenuIcon from './navComponents/MenuIcon';
 import Logo from './navComponents/Logo';
+import useMenuToggle from '../hooks/useMenuToggle';
 
 export type BurgerProps = {
-  setBurgerActive: Function;
-  burgerActive: boolean;
+  isMenuActive: boolean;
+  setMenuActive: Function;
 }
 
 const Nav = () => {
-  const [burgerActive, setBurgerActive] = useState<boolean>(false);
+  const [toggleMenu, isActive] = useMenuToggle()
 
   return (
     <div className='nav'>
       <Logo />
-        <MenuIcon 
-          burgerActive={burgerActive}
-          setBurgerActive = {setBurgerActive}
+        <MenuIcon
+          isMenuActive = {isActive}
+          setMenuActive = {toggleMenu}
         />
-        <Menu 
-          burgerActive = {burgerActive}
-          setBurgerActive = {setBurgerActive}
+        <Menu
+          isMenuActive = {isActive}
+          setMenuActive = {toggleMenu}
         />
     </div>
   )

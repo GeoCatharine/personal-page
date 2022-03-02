@@ -60,13 +60,17 @@ ul {
   }
 
   @include for-tablet-bg {
-    margin-left: 283px !important;
+    margin-left: 260px !important;
     width: 15px !important;
     height: 15px !important;
   }
 
   @include for-tablet-landscape-bg {
     margin-left: 325px !important;
+  }
+
+  @include for-desktop {
+    margin-left: 287px !important;
   }
 }
 
@@ -97,11 +101,15 @@ ul {
   }
 
   @include for-tablet-bg {
-    left: 290px !important;
+    left: 267px !important;
   }
 
   @include for-tablet-landscape-bg {
     left: 332px !important;
+  }
+
+  @include for-desktop {
+    left: 294px !important;
   }
 }
 
