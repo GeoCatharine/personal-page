@@ -72,11 +72,9 @@ const AboutCV = () => {
               </div>
               <div className='downloadCV'>
                 <h2># CV</h2>
-                <p>{'//'} download a CV </p>
                 <div className='btn-box'>
-                  <a data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="250" rel={'noreferrer'} target={'_blank'} href='https://ik.imagekit.io/exnrqllbuq7s/CV_V_Nahornakova2021_HXk48JoKi.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1646301104296' > Here </a>
+                  <a data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="250" rel={'noreferrer'} target={'_blank'} href='https://ik.imagekit.io/exnrqllbuq7s/CV_V_Nahornakova2021_HXk48JoKi.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1646301104296' > Download </a>
                 </div>
-                <p>{'// thanks'}</p>
               </div>
             </div>
           </div>

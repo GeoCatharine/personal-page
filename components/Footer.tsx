@@ -2,12 +2,6 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Footer = () => {
-  const [changeButton, setChangeButton] = useState('email me')
-
-  function copyEmail() {
-    navigator.clipboard.writeText('v.nahornakova@gmail.com');
-    setChangeButton('copied to clipboard!')
-  }
 
   return (
     <div className='footer-container' id="follow">
@@ -16,9 +10,9 @@ const Footer = () => {
         <p>{'// contact info'}</p>
       </div>
       <div className="contact-links">
-        <a onClick={copyEmail}>
+        <a href="mailto:v.nahornakova@gmail.com" >
           <img data-aos='flip-up' data-aos-delay="300" src='mail-lightmode.webp' alt="email icon" /> 
-          {changeButton}
+          email me
         </a>
         <Link href="https://github.com/GeoCatharine">
           <a target={'_blank'} rel="noreferrer" ><img data-aos='flip-up' data-aos-delay="500" src='github-lightmode.svg' alt="github icon"/> git me</a>
