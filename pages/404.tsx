@@ -7,7 +7,7 @@ const Custom404 = () => {
       <Nav />
       <div className='err-container'>
       <h1>404 - Page not found</h1>
-      <img src='err.png' alt='error icon'/>
+      <img src='err.webp' alt='error icon'/>
       <p>{'//'} same as my experience {":')"}</p>
     </div>
     </Fragment>

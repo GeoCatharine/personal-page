@@ -15,7 +15,6 @@ const MyApp: FunctionComponent<AppProps> = ({Component, pageProps}) => {
     <Layout>
       <Head>
         <title>Victoria Valentine</title>
-        <meta name="description" content="Personal/portofilo page" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -27,6 +26,13 @@ const MyApp: FunctionComponent<AppProps> = ({Component, pageProps}) => {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff"></meta>
+        <meta name="title" content="Victoria Valentine - Personal Website" />
+        <meta name="description" content="Front-end developer personal portfolio" />
+        <meta name="keywords" content="personal, portfolio, front-end, developer, developing" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="author" content="Victoria Nahornakova"></meta>
       </Head>
       <Component {...pageProps} />
     </Layout>
