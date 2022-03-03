@@ -232,101 +232,39 @@ div > h2 {
   p {
     color: $decoration-color-darkmode;
     text-align: left;
-    margin: 0;
+    margin: 30px 0;
   }
 
-  button {
-    width: 200px;
-    height: 50px;
-    margin: 60px 0;
-    font-size: 20px;
-    background: $text-color-darkmode;
-    border: 1px solid $decoration-color-darkmode;
+  .btn-box {
+    width: 100%;
+    display: flex;
+
+    a {
+    width: 80%;
+    padding: 10px 10px;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid $background-color-darkmode;
+    background-color: $text-color-darkmode;
     border-radius: 25px;
+    font-size: 20px;
     color: $background-color-darkmode;
     cursor: pointer;
 
-    @include for-tablet-sm {
-      width: 300px;
-      height: 70px;
-      font-size: 25px;
-      border-radius: 30px;
+      &:hover {
+        background: transparent;
+        border: 1px solid $text-color-darkmode;
+        color: $text-color-darkmode;
+      }
 
+      @include for-tablet-sm {
+        max-width: 60%;
+        font-size: 25px;
+      }
+
+      @include for-tablet-bg {
+        max-width: 50%
+      }
     }
-
-    &:hover {
-      background: transparent;
-      border: 1px solid $text-color-darkmode;
-      color: $text-color-darkmode;
-    }
   }
-}
-
-// cv border & animation
-
-.cv-animation-box {
-  width: 100%;
-  height: 260rem;
-  position: relative;
-  top: 0;
-  z-index: 1;
-  overflow: hidden;
-
-  div {
-    position: absolute;
-    background-color: aliceblue;
-  }
-
-  :nth-child(1) {
-    width: 3px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    animation: first 2s ease;
-  }
-
-  :nth-child(2) {
-    width: 100%;
-    height: 3px;
-    top: 0;
-    left: 0;
-    animation: second 2s ease;
-  }
-
-  :nth-child(3) {
-    width: 3px;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    animation: third 2s ease;
-  }
-
-  :nth-child(4) {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    animation: fourth 2s ease;
-  }
-
-}
-
-@keyframes first {
-  from {top: 100vh}
-  to {top: 0px}
-}
-
-@keyframes second {
-  from {left: 100vw;}
-  to {left: 0px;}
-}
-
-@keyframes third {
-  from {top: 100vw}
-  to {top: 0px}
-}
-
-@keyframes fourth {
-  from {right: 100vh}
-  to {right: 0px;}
 }

@@ -21,12 +21,14 @@
   @include for-tablet-landscape-bg {
     margin: 100px auto;
     margin-bottom: 210px;
+    overflow-x: visible;
   }
 
   @include for-desktop {
     width: 70%;
     padding: 0;
     margin: 200px auto;
+    overflow-x: visible;
   }
 
   @include for-desktop-bg {
@@ -69,7 +71,10 @@
   align-content: center;
   padding-top: 30px;
   text-align: center;
-  overflow-x: hidden;
+
+  p {
+    margin: 0;
+  }
 
   @include for-tablet-landscape {
     text-align: start;

@@ -25,37 +25,37 @@ const AboutCV = () => {
               <div>
                 <h2># Timeline:</h2>
                 <Timeline mode={'left'} style={{ width: '100%',marginTop: '50px', color: 'aliceblue' }}>
-                  <Timeline.Item label="2011-2015">Stredná súkromná umelecká škola filmová </Timeline.Item>
+                  <Timeline.Item label="2010-2014">Stredná súkromná umelecká škola filmová </Timeline.Item>
                   <Timeline.Item label="2014-2015">Caffee Deldia {'{'} <br />{'barista };' } </Timeline.Item>
                   <Timeline.Item label="2015-2015">Keltská Krčma {'{'} <br /> {'barista && barman && waitress };' } </Timeline.Item>
                   <Timeline.Item label="2016-2019">RegioJet {'{'} <br /> {'steward && teamlead };'} </Timeline.Item>
-                  <Timeline.Item label="2021-2021">At&t {'{'} <br /> { 'Technical Support };'} </Timeline.Item>
+                  <Timeline.Item label="2020-2020">At&t {'{'} <br /> { 'Technical Support };'} </Timeline.Item>
                 </Timeline>
               </div>
               <div className='skills'>
                 <h2># Skills:</h2>
                 <div className='skills-container'>
                   <div className='card'>
-                    <img src='html-css-darkmode.png' alt='html css icon'/>
+                    <img src='html-css-darkmode.webp' alt='html css icon'/>
                     <p>It didnt take me long to get used to html & css, since i already had some basic understanding how websites work. I absolved 70 hour long udemy couse, just to get a hang of what i can do and what are latest good practices. After that, i knew the right way for me will be front-end web developing.</p>
                   </div>
                   <div className='card'>
-                    <img src='javascript-darkmode.png' alt='javascript icon'/>
+                    <img src='javascript-darkmode.webp' alt='javascript icon'/>
                     <p>This was a huge mountain to climb, and for sure, the one i will be climbing forever. Learning through exercises, courses and just writing as much code as i can. I encounter jQuery on my way, but we decided, after a while, to not stay in touch. </p>
                   </div>
                   <div className='card'>
-                    <img src='vue-darkmode.png' alt='vuejs icon'/>
+                    <img src='vue-darkmode.webp' alt='vuejs icon'/>
                     <p>Vue was match made in heaven. That might be because of my obssesion of organizing the code. Just a basic idea of component with html, functionality and css on single file, was what got me. The lifecycle and props is just cherry on top. </p>
                   </div>
                   <div className='card'>
-                    <img src='sass-darkmode.png' alt='sass icon'/>
+                    <img src='sass-darkmode.webp' alt='sass icon'/>
                     <div className='skill-textbox'>
                     <p className='decor'>{'//'} and other CSS hacks</p>
                     <p>I stared to look into Sass, same time as i started my road with Vue. Even through i enjoyed the scoped scss for little tweaks, the ability of functions, mixins and vars aboslutely dominated the way i write my CSS now. I also tried out Bootstrap and Tailwind couple of times, in order to find suitable framework, although Im still on a hunt.</p>
                     </div>
                   </div>
                   <div className='card'>
-                    <img src='react-darkmode.png' alt='react icon'/>
+                    <img src='react-darkmode.webp' alt='react icon'/>
                    <div className='skill-textbox'>
                     <p className='decor'>{'//'} with typescript</p>
                     <p>React is newest addition, i can already see potential for larger scale projects, however we are still getting to know each other. In order to be more confortable with writing in React, i would have to write much more projects in future and thats the main reason, behind the decision, to write my page in library im not 100% familiar with. </p>
@@ -73,7 +73,9 @@ const AboutCV = () => {
               <div className='downloadCV'>
                 <h2># CV</h2>
                 <p>{'//'} download a CV </p>
-                <button> Download ⤓ </button>
+                <div className='btn-box'>
+                  <a data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="250" rel={'noreferrer'} target={'_blank'} href='https://ik.imagekit.io/exnrqllbuq7s/CV_V_Nahornakova2021_HXk48JoKi.pdf?ik-sdk-version=javascript-1.4.3&updatedAt=1646301104296' > Here </a>
+                </div>
                 <p>{'// thanks'}</p>
               </div>
             </div>

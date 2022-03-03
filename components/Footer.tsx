@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       <div className="contact-links">
         <a onClick={copyEmail}>
-          <img data-aos='flip-up' data-aos-delay="300" src='mail-lightmode.png' alt="email icon" /> 
+          <img data-aos='flip-up' data-aos-delay="300" src='mail-lightmode.webp' alt="email icon" /> 
           {changeButton}
         </a>
         <Link href="https://github.com/GeoCatharine">
