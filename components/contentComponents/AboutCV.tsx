@@ -18,7 +18,7 @@ const AboutCV = () => {
               </div>
               <div className='backstory'>
                 <h2># Backstory: </h2>
-                <p>My first encounter with a code was, when i managed a personal blog at age 13. Instead of filling it with content, i had much more fun figuring out layouts, templates and designing whole page with some basic hmtl & css. Even though i took differnt route in life, ive come full circle right back, behind screen staring at code, ready to learn and make every page i touch, better. </p>
+                <p>My first encounter with a code was when I managed a personal blog at age 13. Instead of filling it with content, I had much more fun figuring out layouts, templates and designing the whole page with some basic hmtl & css. Even though I have taken a different route in life, I've come full circle right back, behind the screen staring at code, ready to learn and make every page I touch better.</p>
               </div>
             </div>
             <div className='content'>
@@ -37,36 +37,36 @@ const AboutCV = () => {
                 <div className='skills-container'>
                   <div className='card'>
                     <img src='html-css-darkmode.webp' alt='html css icon'/>
-                    <p>It didnt take me long to get used to html & css, since i already had some basic understanding how websites work. I absolved 70 hour long udemy couse, just to get a hang of what i can do and what are latest good practices. After that, i knew the right way for me will be front-end web developing.</p>
+                    <p>It didnt take me long to get used to html & css, since I already had some basic understanding of how websites work. I absolved 70 hour long udemy couse, just to get the hang of what I can do and what are the latest good practices. After that, I knew the right way for me would be front-end web development.</p>
                   </div>
                   <div className='card'>
                     <img src='javascript-darkmode.webp' alt='javascript icon'/>
-                    <p>This was a huge mountain to climb, and for sure, the one i will be climbing forever. Learning through exercises, courses and just writing as much code as i can. I encounter jQuery on my way, but we decided, after a while, to not stay in touch. </p>
+                    <p>This was a huge mountain to climb, and for sure, the one I will be climbing forever. Learning through exercises, courses and just writing as much code as I can. I encountered jQuery on my way, but we decided, after a while, not to stay in touch.</p>
                   </div>
                   <div className='card'>
                     <img src='vue-darkmode.webp' alt='vuejs icon'/>
-                    <p>Vue was match made in heaven. That might be because of my obssesion of organizing the code. Just a basic idea of component with html, functionality and css on single file, was what got me. The lifecycle and props is just cherry on top. </p>
+                    <p>Vue was a match made in heaven. That might be because of my obsession with organizing the code. Just a basic idea of a component with html, functionality and css on a single file was what got me. The lifecycle and props are just cherry on top.</p>
                   </div>
                   <div className='card'>
                     <img src='sass-darkmode.webp' alt='sass icon'/>
                     <div className='skill-textbox'>
                     <p className='decor'>{'//'} and other CSS hacks</p>
-                    <p>I stared to look into Sass, same time as i started my road with Vue. Even through i enjoyed the scoped scss for little tweaks, the ability of functions, mixins and vars aboslutely dominated the way i write my CSS now. I also tried out Bootstrap and Tailwind couple of times, in order to find suitable framework, although Im still on a hunt.</p>
+                    <p>I started to look into Sass, same time as I started my road with Vue. Even though I enjoyed the scoped scss for little tweaks, the ability of functions, mixins and vars absolutely dominated the way i write my CSS now. I also tried out Bootstrap and Tailwind a couple of times, in order to find a suitable framework, although I'm still on the hunt.</p>
                     </div>
                   </div>
                   <div className='card'>
                     <img src='react-darkmode.webp' alt='react icon'/>
                    <div className='skill-textbox'>
                     <p className='decor'>{'//'} with typescript</p>
-                    <p>React is newest addition, i can already see potential for larger scale projects, however we are still getting to know each other. In order to be more confortable with writing in React, i would have to write much more projects in future and thats the main reason, behind the decision, to write my page in library im not 100% familiar with. </p>
+                    <p>React is the newest addition. I can already see the potential for larger scale projects, but we are still getting to know each other. In order to be more comfortable with writing in React, I will have to write many more projects in the future and that's the main reason behind the decision to write my page in a library I'm not 100% familiar with. </p>
                    </div>
                   </div>
                   <div className='skillbox-else'>
                     <h1>..etc..</h1>
                     <p className='decor'>Pros:</p>
-                    <p>From previous experieces i can definetly say im team player, im good with time managment and my biggest positive characteristic is, i know that i dont know. I dont overestimate my ablities, there is no shame of not knowing and asking. I would much rather ask hundred times and do my job right than eyeball it and fail. Also doublechecking is nice. </p>
+                    <p>From previous experiences, I can definitely say I'm a team player, I'm good at time management and my biggest positive characteristic is, I know that I dont know. I don't overestimate my abilities, there is no shame in not knowing and asking. I would much rather ask a hundred times and do my job right than eyeball it and fail. Also, double checking is nice. </p>
                     <p className='decor'> Cons:</p>
-                    <p>I can be slow in terms of work, mostly because i have perfectionis eye and can get stuck on single pixel aligning not as i desire. Also we have to count in my lack of experience, however im positive thats something that will solve itself throu time and code. </p>
+                    <p>I can be slow in terms of work, mostly because I have a perfectionist eye and can get stuck on a single pixel aligning not as I desire. Also, we have to count on my lack of experience, but I'm positive that's something that will solve itself through time and code. </p>
                   </div>
                 </div>
               </div>
