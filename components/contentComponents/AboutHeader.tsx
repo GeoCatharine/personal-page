@@ -11,11 +11,13 @@ const AboutHeader = () => {
         <p>
           Hi! My name is Victoria, 
           <br />
+          {`
           I'm a self-thought junior front-end developer from Slovakia 
           and this page, although still in the process of making,
           is a little showcase of my code and what I can do.
           Even though my coding journey is still at the beginning, 
           I can't wait to learn more, google harder and show off my skills here.
+          `}
         </p>
         <div className='text-decor'>{'</p>'}</div>
       </div>
